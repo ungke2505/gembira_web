@@ -3,7 +3,7 @@
 <style>
 :root{box-sizing:border-box;--ink:#4a2f1f;--red:#D9261C;--cream:#F7EBD3;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 html,body{margin:0;background:#FBEBCF;font-family:Fraunces,Georgia,serif;color:var(--ink)}
-#sp{height:1603vh}#w{position:fixed;inset:0}#w canvas{display:block;width:100%;height:100%}
+#sp{height:1653vh}#w{position:fixed;inset:0}#w canvas{display:block;width:100%;height:100%}
 #txt,#fin{position:fixed;left:6vw;top:calc(5vh + env(safe-area-inset-top,0px));max-width:min(88vw,520px);pointer-events:none;text-shadow:0 0 8px #FBEBCF,0 0 16px #FBEBCF}
 #txt i,#fin p{display:block;margin:0;font:italic 500 clamp(15px,2vw,20px)/1.3 Fraunces,Georgia,serif}
 #txt h2,#fin h2{margin:.1em 0 .2em;font:600 clamp(26px,5vw,48px)/1.05 Fraunces,Georgia,serif;color:var(--red)}
@@ -16,9 +16,9 @@ html,body{margin:0;background:#FBEBCF;font-family:Fraunces,Georgia,serif;color:v
 #fin a:focus-visible{outline:3px solid #F4C430;outline-offset:3px}
 #hint{position:fixed;bottom:3vh;left:0;right:0;text-align:center;font:italic 500 16px Fraunces,Georgia,serif;pointer-events:none}
 #err{display:none;position:fixed;inset:0;place-items:center;text-align:center;padding:30px}
-</style></head><body>
+#rem{opacity:0;transition:opacity .5s}#rem.on{opacity:1}#rem::after{content:'\2193';display:inline-block;margin-left:.45em;animation:bob 1.1s ease-in-out infinite}@keyframes bob{50%{transform:translateY(5px)}}@media (prefers-reduced-motion:reduce){#rem::after{animation:none}}</style></head><body>
 <div id="sp"></div><div id="w"></div>
-<div id="txt"><i>Scroll Untuk Mulai Belanja</i></div><div class="bb cu" id="b0"></div><div class="bb sl" id="b1"></div><div class="bb ca" id="b2"></div>
+<div id="txt"><i id="rem">Scroll Untuk Mulai Belanja</i></div><div class="bb cu" id="b0"></div><div class="bb sl" id="b1"></div><div class="bb ca" id="b2"></div>
 <div id="fin"><img id="flogo" alt="Gembira Houseware"><p>Produk dan Layanan Berkualitas.</p><h2>Pulang Bawa Hadiah.</h2><a href="sejarah.html">Kenali Gembira Lebih Dalam</a></div>
 <div id="hint">gulir pelan-pelan</div><div id="err">Perangkat ini belum mendukung tampilan 3D (WebGL).</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -157,7 +157,7 @@ for(const z of[.082,-.082])plane(.24,.24/LA,0,.2,z,0,LT).parent!==bag&&(()=>{con
 // ===== kamera, teks, alur =====
 const PA=[[0,0,13],[.07,0,8],[.08,0,7.6],[.13,0,.8],[.15,-.6,-6],[.19,-.6,-6],[.22,.7,-8],[.25,-.7,-9.8],[.28,.7,-11.4],[.31,-.3,-12.8],[.33,-.4,-13.2],[.455,-.4,-13.2],[.485,3.9,-12.1],[.545,3.9,-12.1],[.56,3.9,-14.4],[.6,3.9,-14.4],[.64,0,-22.6],[.88,0,-22.6],[.95,0,-.3],[.965,0,3.2],[.985,-5,6.5],[1,-7,7.2]];
 const CY=[[0,0],[.33,0],[.37,.7],[.45,.7],[.49,-1.1],[.585,-1.1],[.625,.85],[.64,.9],[.88,.9],[.91,0],[1,0]];
-const T=[[0,'Sudah sampai Gembira Houseware.',0,.07],[0,'Masuk.',.08,.14],
+const T=[[0,'Ayo scroll perlahan untuk masuk toko',-.03,.04],[0,'Sudah sampai Gembira Houseware.',.032,.076],[0,'Masuk.',.08,.14],
 [1,'Selamat datang di Gembira Houseware, Selamat Berbelanja.',.145,.215],[0,'Lihat - lihat dulu ah...',.215,.31],
 [1,'Cari apa kak?',.385,.425],[0,'Wadah buat masakan berkuah dan untuk goreng ikan.',.415,.455],
 [1,'Baik, Mari saya antar ke area peralatan masak..',.455,.505],[1,'Coba yang ini kak, kualitasnya bagus, awet..',.495,.55],
@@ -167,10 +167,11 @@ const T=[[0,'Sudah sampai Gembira Houseware.',0,.07],[0,'Masuk.',.08,.14],
 [0,'Ok boleh, saya mau.',.7,.73],[2,'Baik Kak, kami proses ya..',.72,.765],
 [2,'Kakak dapat harga spesial member, nomor undian untuk undian Gembira Houseware dan Hadiah spesial dari Gembira',.755,.84],
 [0,'Baik, Terima kasih..',.84,.885],[1,'Terima Kasih telah berbelanja di Gembira, hati-hati di jalan kak.',.92,.965]];
-const SP=[[0,1.5,-5.2],[.26,1.5,-5.2],[.33,1.3,-9],[.37,.5,-11.2],[.455,.5,-11.2],[.485,3.9,-10.9],[.545,3.9,-10.9],[.56,3.9,-13.2],[.88,3.9,-13.2],[.925,1.2,-3.2],[1,1.2,-3.2]],WP=[[0,0],[.295,.43],[.619,.6],[.813,.88],[1,1]],PS1=new V3(4.7,1.08,-10.9),PS2=new V3(4.7,.6,-13.2),BU=[$('b0'),$('b1'),$('b2')],BT=['','',''],vv=new V3();
+const SP=[[0,1.5,-5.2],[.26,1.5,-5.2],[.33,1.3,-9],[.37,.5,-11.2],[.455,.5,-11.2],[.485,3.9,-10.9],[.545,3.9,-10.9],[.56,3.9,-13.2],[.88,3.9,-13.2],[.925,1.2,-3.2],[1,1.2,-3.2]],WP=[[0,0],[0.0399,0.04],[0.082,0.075],[0.3177,0.43],[0.6313,0.6],[0.819,0.88],[1,1]],PS1=new V3(4.7,1.08,-10.9),PS2=new V3(4.7,.6,-13.2),BU=[$('b0'),$('b1'),$('b2')],BT=['','',''],vv=new V3();
 const RM=matchMedia('(prefers-reduced-motion:reduce)').matches,cp0=new THREE.Color(BG),cp1=new THREE.Color(0xFFD59A),cpos=new V3(3,3.4,22),clk=new V3(0,1.2,12),vA=new V3(),vB=new V3(),vC=new V3(),tp3=new V3(),tl3=new V3();
 function size(){const w=innerWidth,h=innerHeight;ren.setSize(w,h);cam.aspect=w/h;cam.fov=w/h<.8?72:55;cam.updateProjectionMatrix()}addEventListener('resize',size);size();
 let tp=0,cp=0;
+let lastMv=performance.now();addEventListener('scroll',()=>{lastMv=performance.now();$('rem').classList.remove('on')},{passive:true});
 function loop(){requestAnimationFrame(loop);
  tp=kf(WP,cl(scrollY/(document.documentElement.scrollHeight-innerHeight)||0))[0];cp+=RM?tp-cp:(tp-cp)*.1;const p=cp,[x,z]=kf(PA,p);
  const[sx,sz]=kf(SP,p);
@@ -198,11 +199,11 @@ function loop(){requestAnimationFrame(loop);
  tp3.set(AX+Math.sin(cy)*d+lr(3,0,k),h,AZ+Math.cos(cy)*d);tl3.set(AX-Math.sin(cy)*1.5*w,lr(lr(1.4,1.2,k),2.4,o),AZ-Math.cos(cy)*1.5*w);
  const s=RM?1:.1;cpos.lerp(tp3,s);clk.lerp(tl3,s);cam.position.copy(cpos);cam.lookAt(clk);
  // bubble percakapan
- [me,sal,cas].forEach((o,i)=>{let best=-1,bv=0;T.forEach((t,j)=>{if(t[0]!==i)return;const v=fw(p,t[2],t[3]);if(v>bv){bv=v;best=j}});
+ let mb=0;[me,sal,cas].forEach((o,i)=>{let best=-1,bv=0;T.forEach((t,j)=>{if(t[0]!==i)return;const v=fw(p,t[2],t[3]);if(v>bv){bv=v;best=j}});
   const e=BU[i];if(best>=0&&BT[i]!==T[best][1]){BT[i]=T[best][1];e.textContent=BT[i]}
   vv.set(o.g.position.x,2.2,o.g.position.z).project(cam);const bw=e.offsetWidth,bh=e.offsetHeight,X=(vv.x*.5+.5)*innerWidth,Y=(-vv.y*.5+.5)*innerHeight;
-  e.style.transform=`translate(${cl(X-bw/2,10,innerWidth-bw-10)}px,${Math.max(8,Y-bh-14)}px)`;e.style.opacity=vv.z<1?bv:0});
- $('txt').style.opacity=1-wn(p,.94,.96);const fo=wn(p,.955,.985),f=$('fin');f.style.opacity=fo;f.style.pointerEvents=fo>.5?'auto':'none';$('hint').style.opacity=1-wn(p,0,.03);
+  e.style.transform=`translate(${cl(X-bw/2,10,innerWidth-bw-10)}px,${Math.max(8,Y-bh-14)}px)`;mb=Math.max(mb,vv.z<1?bv:0);e.style.opacity=vv.z<1?bv:0});
+ $('txt').style.opacity=1-wn(p,.94,.96);{const rm=$('rem'),tx=p<.14?'Scroll Untuk Mulai Belanja':'Scroll Untuk Lanjut Belanja';if(rm.dataset.t!==tx){rm.dataset.t=tx;rm.textContent=tx}rm.classList.toggle('on',Math.abs(tp-cp)<.0008&&p<.95&&performance.now()-lastMv>(mb>.8?7000:p<.02?5000:3500))}const fo=wn(p,.955,.985),f=$('fin');f.style.opacity=fo;f.style.pointerEvents=fo>.5?'auto':'none';$('hint').style.opacity=1-wn(p,0,.03);
  const du=.25*wn(p,.95,1);sc.background.copy(cp0).lerp(cp1,du);sc.fog.color.copy(sc.background);hemi.intensity=1;cm.opacity=o;conf.visible=o>.01;if(conf.visible){for(let i=0;i<NC;i++){let y=cpA[i*3+1]-.03-(i%5)*.004;if(y<0)y=10;cpA[i*3+1]=y;cpA[i*3]+=Math.sin(y*2+i)*.004}cg.attributes.position.needsUpdate=true}decor.forEach(g=>g.position.y=Math.sin(performance.now()/600+g.userData.b)*.08);
  ren.render(sc,cam)}
 // bangun instance (setelah semua put())
