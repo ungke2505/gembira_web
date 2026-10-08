@@ -1,0 +1,250 @@
+<!doctype html><html lang="id"><head><style id="gx-css">html::before{content:"";position:fixed;inset:0;z-index:9998;background:#FBEBCF;opacity:0;pointer-events:none;transition:opacity .9s ease}html.gx-in::before{opacity:1;transition:none}html.gx-out::before{opacity:1;transition:opacity .7s ease-in .25s}@media (prefers-reduced-motion:reduce){html.gx-out::before,html::before{transition-duration:.2s;transition-delay:0s}}</style>
+<script>(function(){try{if(sessionStorage.getItem('gx')){var e=document.documentElement;e.classList.add('gx-in');setTimeout(function(){e.classList.remove('gx-in')},3000)}}catch(x){}})()</script>
+<link rel="prefetch" href="index.html">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Gembira — Menyaksikan Gembira Tumbuh</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;--ink:#4a2f1f;--red:#D9261C;--cream:#F7EBD3;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html,body{margin:0;background:#FBEBCF;font-family:Fraunces,Georgia,serif;color:var(--ink)}
+#sp{height:1600vh}
+#w{position:fixed;inset:0;overflow:hidden;background:#FBEBCF}
+#w svg{display:block;width:100%;height:100%}
+.t{font:italic 500 22px Fraunces,Georgia,serif;fill:#5a3a28;stroke:#F7EBD3;stroke-width:5;paint-order:stroke;stroke-linejoin:round}
+.sg{font:600 19px Fraunces,Georgia,serif;fill:#4a2f1f}
+#txt,#fin{position:fixed;left:6vw;top:calc(6vh + env(safe-area-inset-top,0px));max-width:min(88vw,520px);pointer-events:none}
+#txt i,#fin p{display:block;margin:0;font:italic 500 clamp(15px,2vw,20px)/1.3 Fraunces,Georgia,serif}
+#txt h2,#fin h2{margin:.1em 0 .3em;font:600 clamp(34px,6.5vw,68px)/1 Fraunces,Georgia,serif;color:var(--red)}
+#cap{transition:opacity .35s;margin-top:.8em;min-height:5em}
+#cap em{display:block;font:600 clamp(20px,2.6vw,26px) Fraunces,Georgia,serif;color:var(--red);font-style:normal}
+#cap b{display:block;font:600 clamp(22px,3vw,32px)/1.1 Fraunces,Georgia,serif}
+#cap span{font:italic 500 clamp(15px,2vw,19px) Fraunces,Georgia,serif}
+#fin{opacity:0}
+#fin a{display:inline-block;margin-top:.6em;background:var(--red);color:var(--cream);padding:.85em 1.5em;border-radius:99px;text-decoration:none;font:600 15px system-ui,sans-serif}
+#fin a:focus-visible{outline:3px solid #F4C430;outline-offset:3px}
+#bt{position:fixed;left:0;right:0;bottom:calc(2vh + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;align-items:center;gap:8px;pointer-events:none}
+#rt{display:flex;align-items:center;gap:6px;font:italic 500 13px Fraunces,Georgia,serif;background:rgba(247,235,211,.85);padding:5px 14px;border-radius:99px}
+#rt span{opacity:.45;transition:opacity .4s,color .4s}#rt span.on{opacity:1;color:var(--red);font-weight:600}#rt s{width:18px;border-top:2px dashed #8a5a3b;opacity:.5}
+#dt{display:flex;gap:3px;background:rgba(247,235,211,.85);padding:5px 10px;border-radius:99px}
+#dt svg{width:15px;height:15px}#dt path{fill:none;stroke:#8a5a3b;stroke-width:1.5;opacity:.5;transition:fill .4s,opacity .4s}#dt .on path{fill:var(--red);stroke:var(--red);opacity:1}
+#hint{position:fixed;bottom:15vh;left:0;right:0;text-align:center;font:italic 500 16px Fraunces,Georgia,serif;pointer-events:none}
+#cap a.loc{display:inline-block;padding:.45em .15em;font:italic 500 clamp(15px,2vw,18px) Fraunces,Georgia,serif;color:var(--red);text-decoration:underline;text-underline-offset:4px;pointer-events:auto;white-space:nowrap}
+#txt,#fin{text-shadow:0 0 10px rgba(251,235,207,.95),0 0 3px rgba(251,235,207,.95)}
+#fin a{text-shadow:none}
+#txt h2,#fin h2{font-size:clamp(34px,min(6.5vw,8.5vh),68px)}
+#cap b{font-size:clamp(22px,min(3vw,4vh),32px)}
+#hint{left:6vw;right:auto;bottom:auto;top:40vh;text-align:left}
+#cap a.loc:focus-visible{outline:3px solid #F4C430;outline-offset:3px;border-radius:4px}
+@keyframes sw{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+#txt.sw>*{animation:sw .55s ease backwards}
+.pl{font:italic 500 15px Fraunces,Georgia,serif;fill:#5a3a28;stroke:#E3EDDB;stroke-width:4;paint-order:stroke;stroke-linejoin:round}
+.sl{font:italic 500 13px Fraunces,Georgia,serif;fill:#6d8f86}
+#fin .st{display:flex;align-items:baseline;gap:.55em;margin:.1em 0;font:600 clamp(22px,3vw,30px)/1.25 Fraunces,Georgia,serif}
+#fin .st b{color:var(--red);font-weight:600}#fin .st u{text-decoration:none;opacity:.45}
+#fin .st+.st+.st{margin-bottom:.3em}
+@media (prefers-reduced-motion:reduce){#txt.sw>*{animation:none}}
+</style></head><body>
+<div id="sp"></div><div id="w"></div>
+<div id="txt"><i id="k"></i><h2 id="h"></h2><div id="cap"></div></div>
+<div id="fin"><p>Dan perjalanan ini berlanjut.</p><h2>Satu toko menjadi sebuah perjalanan.</h2><div class="st"><b>1977</b><u>→</u><b>2026</b></div><div class="st"><b>1 toko</b><u>→</u><b>16 toko</b></div><div class="st"><b>1 perjalanan</b></div><a href="index.html">Kembali Ke Halaman Utama</a></div>
+<div id="hint">Scroll Untuk Mulai Perjalanan</div>
+<div id="bt"><div id="rt"><span>Gorontalo</span><s></s><span>Manado</span><s></s><span>Bitung</span><s></s><span>Makassar</span></div><div id="dt"></div></div>
+<script>
+const $=i=>document.getElementById(i),cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x)),S=t=>t*t*(3-2*t),lr=(a,b,t)=>a+(b-a)*t,wn=(p,a,b)=>S(cl((p-a)/(b-a)));
+const R='#D9261C',HC=['#E2B73E','#2F8F83','#D98B4A','#EAD9B5','#E88FA0'],KG='Kota Gorontalo, Gorontalo',KM='Kota Manado, Sulawesi Utara',GM='https://maps.app.goo.gl/';
+/* ==================== DATA: 16 toko terverifikasi ====================
+   mapUrl : tautan Google Maps asli (kosongkan "" bila belum ada -> tombol "Lihat lokasi" otomatis tersembunyi)
+   geo    : PLACEHOLDER koordinat asli toko -> {lat:..., lng:...}. Selama null, pin pada peta memakai
+            posisi ilustratif di sekitar area/kota (lihat AREA & off). Isi geo agar pin tepat.
+   x      : posisi di dunia samping (story mode).  area/off : posisi ilustratif di peta (bukan koordinat asli). */
+const STORES=[
+{year:'1977',name:'Gembira Ria',city:KG,x:560,kind:0,sign:'Gembira Ria',mapUrl:GM+'RWZefz7se6Y9AyEP6',area:'KG',off:[0,0],geo:null},
+{year:'Juli 2009',name:'Gembira Houseware H.B. Jassin',city:KG,x:1000,kind:1,sign:'H.B. Jassin',mapUrl:GM+'WBD5haEjNoVgr34y9',area:'KG',off:[.1,.06],geo:null},
+{year:'Juni 2014',name:'Gembira Grosir',city:KG,x:1440,kind:2,sign:'Gembira Grosir',mapUrl:GM+'H4Vx19b9AtdFuCUW6',area:'KG',off:[.2,0],geo:null},
+{year:'September 2017',name:'Gembira Houseware Limboto',city:'Kabupaten Gorontalo, Gorontalo',x:1990,kind:1,sign:'Limboto',mapUrl:GM+'vcbztUvN9C4yRV5o7',area:'LIM',off:[0,0],geo:null},
+{year:'Juni 2018',name:'Gembira Houseware Ipilo',city:KG,x:2420,kind:1,sign:'Ipilo',mapUrl:GM+'B1dHh8aVPx72WJzL7',area:'KG',off:[.06,.18],geo:null},
+{year:'November 2018',name:'Gembira Houseware Marisa',city:'Kabupaten Pohuwato, Gorontalo',x:3000,kind:1,sign:'Marisa',mapUrl:GM+'wWZvakM4w9ewNTYCA',area:'MAR',off:[0,0],geo:null},
+{year:'Oktober 2019',name:'Gembira Houseware Dewi Sartika',city:KG,x:3480,kind:1,sign:'Dewi Sartika',mapUrl:GM+'m43XcotNGj7PU5hR9',area:'KG',off:[.2,.16],geo:null},
+{year:'2019',name:'Gembira Houseware Tamalate',city:KG,x:3830,kind:1,sign:'Tamalate',mapUrl:GM+'hxBXsLLWrxRya7WT8',area:'KG',off:[.3,.08],geo:null},
+{year:'Juni 2021',name:'Gembira Houseware Tilamuta',city:'Kabupaten Boalemo, Gorontalo',x:4400,kind:1,sign:'Tilamuta',mapUrl:GM+'8s2gQpXaNrFnC3Dh8',area:'TIL',off:[0,0],geo:null},
+{year:'Mei 2022',name:'Gembira Houseware Paal Dua',city:KM,x:5400,kind:1,sign:'Paal Dua',mapUrl:GM+'So2rchcWcGgT5jou8',area:'MAN',off:[.03,-.05],geo:null},
+{year:'Juli 2022',name:'Gembira Houseware Karombasan',city:KM,x:5760,kind:1,sign:'Karombasan',mapUrl:GM+'18FmWtpNFtU4RbaLA',area:'MAN',off:[.07,-.14],geo:null},
+{year:'September 2022',name:'Gembira Houseware Tuminting',city:KM,x:6120,kind:1,sign:'Tuminting',mapUrl:GM+'XBV3vr11UQGdFh4BA',area:'MAN',off:[.12,0],geo:null},
+{year:'Juli 2023',name:'Gembira Houseware Sario',city:KM,x:6480,kind:1,sign:'Sario',mapUrl:GM+'BVj6abY9y9YtPayz5',area:'MAN',off:[-.02,-.12],geo:null},
+{year:'Maret 2024',name:'Gembira Houseware Girian',city:'Kota Bitung, Sulawesi Utara',x:7050,kind:1,sign:'Girian',mapUrl:GM+'nHEHGYFwEmtZMFsJ9',area:'BIT',off:[0,0],geo:null},
+{year:'Mei 2025',name:'Gembira Houseware Antang',city:'Kota Makassar, Sulawesi Selatan',x:7850,kind:1,sign:'Antang',mapUrl:GM+'hyyJKo7icFMwz2kC9',area:'MAK',off:[.12,-.05],geo:null},
+{year:'Februari 2026',name:'Gembira Houseware Perintis',city:'Kota Makassar, Sulawesi Selatan',x:8230,kind:1,sign:'Perintis',mapUrl:GM+'fGMHRtitcTNFDvocA',area:'MAK',off:[.06,.12],geo:null}];
+// tuple lama (tahun, nama, kota, x, jenis, papan) -> dipakai ulang oleh ilustrasi toko
+const D=STORES.map(s=>[s.year,s.name,s.city,s.x,s.kind,s.sign]);
+const N=D.length,stops=D.map(d=>d[3]-250);
+const CH=[['Bab 1','Awalnya, hanya satu.'],['Bab 2','Mencari tempatnya.'],['Bab 3','Tumbuh di Gorontalo.'],['Bab 4','Tiba di Sulawesi Utara.'],['Bab 5','Terus melangkah.'],['Bab 6','Hari ini.']],CI=[0,1,1,2,2,2,2,2,2,3,3,3,3,4,4,5];
+/* ==================== STORY MODE: ilustrasi (tidak berubah) ==================== */
+const store=(i,[y,n,c,x,k,sh])=>{const w=k==2?150:110,H=k==0?140:170,ah=k==0?22:34,wall=k==0?'#D9B88A':['#F3E4C3','#EFD9A8','#F6E7C8'][i%3];
+let o=`<g class="s" id="s${i}" transform="translate(${x} 470) scale(0)"><rect x="${-w}" y="${-H}" width="${2*w}" height="${H}" fill="${wall}"/><rect x="${-w-6}" y="${-H-8}" width="${2*w+12}" height="${ah}" rx="4" fill="${k==2?'#8a5a3b':R}"/><path d="M${-w-6} ${-H+ah/2-8}H${w+6}" stroke="#fff" stroke-width="${ah}" stroke-dasharray="22 22" opacity=".28"/>
+<rect x="${-w*.72}" y="${-H-50}" width="${w*1.44}" height="38" rx="7" fill="#F4C430"/><text class="sg" x="0" y="${-H-25}" text-anchor="middle">${sh}</text><text class="t" x="0" y="${-H-60}" text-anchor="middle">${y.split(' ').pop()}</text>`;
+if(k==2)o+=`<rect x="-70" y="-104" width="140" height="104" fill="#B9A27A"/><path d="M-70 -80H70M-70 -56H70M-70 -32H70" stroke="#8a5a3b" stroke-width="3"/><rect x="-140" y="-44" width="52" height="44" fill="#D6A04A"/><rect x="-136" y="-84" width="44" height="40" fill="#C8903A"/><rect x="92" y="-44" width="52" height="44" fill="#D6A04A"/>`;
+else{o+=`<rect x="-22" y="-92" width="44" height="92" rx="3" fill="#6b4a36"/><circle cx="14" cy="-46" r="3" fill="#F4C430"/>`;[-92,40].forEach(a=>{o+=`<rect x="${a}" y="-112" width="52" height="68" rx="4" fill="#CDE7E3"/>`;for(let j=0;j<4;j++)o+=`<rect x="${a+6+j%2*22}" y="${-100+(j>>1)*28}" width="18" height="16" rx="3" fill="${HC[(i+j)%5]}"/>`})}
+return o+'</g>'};
+const house=j=>`<rect x="-30" y="-48" width="60" height="48" fill="${HC[j]}"/><path d="M-38-48L0-80L38-48z" fill="#C8372D"/><rect x="-8" y="-28" width="16" height="28" fill="#6b4a36"/>`;
+const tree='<rect x="-4" y="-44" width="8" height="44" fill="#7a5238"/><circle cy="-62" r="30" fill="#6E8F5A"/><circle cx="-14" cy="-48" r="20" fill="#7FA06B"/>';
+const palm='<path d="M-3 0Q10-50 0-95" stroke="#8a5a3b" stroke-width="7" fill="none"/><g fill="#2F8F83"><ellipse cx="-26" cy="-96" rx="30" ry="8" transform="rotate(-20 0 -95)"/><ellipse cx="26" cy="-96" rx="30" ry="8" transform="rotate(20 0 -95)"/><ellipse cx="0" cy="-108" rx="8" ry="26"/></g><circle cx="-4" cy="-90" r="5" fill="#8a5a3b"/>';
+const gate=(x,t)=>`<g class="d" data-x="${x}" data-s="1" transform="translate(${x} 470) scale(0)"><rect x="-150" y="-230" width="12" height="230" fill="#8a5a3b"/><rect x="138" y="-230" width="12" height="230" fill="#8a5a3b"/><rect x="-170" y="-250" width="340" height="54" rx="10" fill="${R}"/><text x="0" y="-214" text-anchor="middle" style="font:600 32px Fraunces,Georgia,serif;fill:#F7EBD3">${t}</text></g>`;
+/* lingkungan: awal lapang & sepi (1 toko), makin rapat seiring Gembira tumbuh */
+let r=7;const rn=()=>(r=(r*9301+49297)%233280)/233280;let dh='',bh='';
+for(let x=360;x<8800;x+=(70+rn()*70)*lr(1,.6,x/8800)){if(D.some(d=>Math.abs(d[3]-x)<200))continue;if(x<1500&&rn()<.6)continue;const z=x<4800?0:x<7500?1:2,t=rn(),s=(.8+rn()*.4).toFixed(2);
+dh+=`<g class="d" data-x="${x}" data-s="${s}" transform="translate(${x} 470) scale(0)">${z==1&&t<.5?palm:t<(z?.3:.55)?tree:house(rn()*5|0)}</g>`}
+const bg=(x,h0)=>{const h=h0||120+rn()*150;bh+=`<g class="d" data-x="${x}" data-s="1" transform="translate(${x} 470) scale(0)"><rect x="-30" y="${-h}" width="60" height="${h}" fill="${rn()<.5?'#E3C99C':'#DDB98B'}"/><rect x="-20" y="${-h+12}" width="40" height="${h-30}" fill="#fff" opacity=".25"/></g>`};
+for(let x=2150;x<4600;x+=170)bg(x,55+rn()*55);for(let x=5200;x<6800;x+=75)bg(x);for(let x=7550;x<8800;x+=62)bg(x);
+let cl2='';for(let i=0;i<8;i++)cl2+=`<g fill="#fff" opacity=".6"><ellipse cx="${300+i*1150}" cy="${55+i%3*30}" rx="70" ry="16"/><ellipse cx="${360+i*1150}" cy="${45+i%3*30}" rx="40" ry="14"/></g>`;
+const me=`<g id="me"><ellipse rx="28" ry="5" fill="#4a2f1f" opacity=".16"/><g id="l1"><rect x="-12" y="-76" width="11" height="70" rx="5" fill="#3b3a40"/><path d="M-15-8h20q2 8-2 8h-16z" fill="#4a3426"/></g><g id="l2"><rect x="2" y="-76" width="11" height="70" rx="5" fill="#3b3a40"/><path d="M0-8h20q2 8-2 8h-16z" fill="#4a3426"/></g><rect x="-19" y="-100" width="38" height="28" rx="6" fill="#3b3a40"/><path d="M-18-88L-20-130Q0-142 20-130L18-88z" fill="${R}"/><path d="M-6-132l6 10 6-10z" fill="#F7EBD3"/><circle cx="9" cy="-112" r="4" fill="#F4C430"/><rect x="-5" y="-142" width="10" height="14" fill="#B9835B"/><g id="ar"><rect x="-6" y="-124" width="11" height="44" rx="5" fill="#B9835B"/><rect x="-7" y="-126" width="13" height="18" rx="6" fill="${R}"/></g><circle cx="-2" cy="-154" r="16.5" fill="#2a1a14"/><circle cx="-15" cy="-166" r="7" fill="#2a1a14"/><circle cx="3" cy="-150" r="13.5" fill="#B9835B"/><circle cx="8" cy="-152" r="1.8" fill="#2a1a14"/></g>`;
+/* ==================== GEOGRAPHIC MODE: peta Sulawesi ilustratif ==================== */
+// proyeksi sederhana (bukan kartografi presisi): 70 unit / derajat
+const mpt=(lo,la)=>[500+(lo-122)*70,300-(la+2)*70];
+// titik acuan area (ilustratif) untuk peta bergaya; koordinat toko asli: isi STORES[i].geo
+const AREA={KG:[123.06,.54],LIM:[122.96,.64],MAR:[121.93,.49],TIL:[122.32,.52],MAN:[124.84,1.49],BIT:[125.15,1.42],MAK:[119.42,-5.14]};
+const AP=k=>mpt(AREA[k][0],AREA[k][1]);
+const OUT=[[125.02,1.74],[125.28,1.58],[125.26,1.38],[125,1.2],[124.65,1.05],[124.3,.9],[123.85,.62],[123.4,.5],[123.05,.45],[122.5,.43],[122,.41],[121.4,.38],[120.85,.3],[120.4,.12],[120.25,-.3],[120.3,-.8],[120.75,-1.25],[121.2,-1.05],[121.65,-.85],[122.3,-.65],[122.9,-.72],[123.3,-.88],[123.45,-1.1],[123.2,-1.3],[122.7,-1.2],[122.2,-1.45],[121.8,-1.6],[121.5,-1.85],[121.7,-2.25],[121.9,-2.65],[122.4,-2.95],[122.95,-3.35],[123.05,-3.95],[122.85,-4.55],[122.65,-5.1],[122.35,-5.4],[122.05,-5],[121.85,-4.55],[121.6,-4.05],[121.35,-3.45],[121.15,-2.85],[120.75,-2.65],[120.35,-2.95],[120.22,-3.4],[120.28,-4],[120.38,-4.7],[120.4,-5.2],[120.3,-5.55],[119.95,-5.7],[119.55,-5.62],[119.34,-5.3],[119.33,-4.85],[119.35,-4.4],[119.5,-3.95],[119.35,-3.5],[118.95,-3],[118.8,-2.6],[119.1,-2.05],[119.4,-1.6],[119.7,-1],[119.85,-.7],[119.75,-.3],[119.85,.25],[120.05,.8],[120.5,1.05],[120.95,1.2],[121.5,1.3],[122,1.15],[122.5,.98],[122.9,.88],[123.5,.95],[124,1.15],[124.4,1.4],[124.82,1.62],[124.9,1.72]].map(p=>mpt(p[0],p[1]));
+const smooth=P=>{const n=P.length,f=v=>v.toFixed(1);let d=`M${f(P[0][0])} ${f(P[0][1])}`;for(let i=0;i<n;i++){const a=P[(i-1+n)%n],b=P[i],c=P[(i+1)%n],e=P[(i+2)%n];d+=`C${f(b[0]+(c[0]-a[0])/6)} ${f(b[1]+(c[1]-a[1])/6)} ${f(c[0]-(e[0]-b[0])/6)} ${f(c[1]-(e[1]-b[1])/6)} ${f(c[0])} ${f(c[1])}`}return d+'z'};
+const LD=smooth(OUT),tg2=mpt(121.95,-.4),pl2=mpt(123.5,-1.5);
+const pos=s=>s.geo?mpt(s.geo.lng,s.geo.lat):mpt(AREA[s.area][0]+s.off[0],AREA[s.area][1]+s.off[1]);
+const PP=STORES.map(pos);
+const arc=(A,B,b,n)=>{const mx=(A[0]+B[0])/2,my=(A[1]+B[1])/2,dx=B[0]-A[0],dy=B[1]-A[1],qx=mx-dy*b,qy=my+dx*b,o=[];for(let i=0;i<=n;i++){const u=i/n,v=1-u;o.push([v*v*A[0]+2*v*u*qx+u*u*B[0],v*v*A[1]+2*v*u*qy+u*u*B[1]])}return o};
+const chain=(ids,b,n)=>{let o=[];for(let i=0;i<ids.length-1;i++){const a=arc(PP[ids[i]],PP[ids[i+1]],b,n);o=o.concat(i?a.slice(1):a)}return o};
+// jejak perjalanan: Gorontalo -> Limboto -> Marisa -> Tilamuta | -> Manado | -> Bitung | -> Makassar
+const RS=[chain([0,3,5,8],.06,22),chain([8,9],-.1,46),chain([9,13],.05,16),chain([13,14],.12,64)];
+const HILLS=[[120.2,-1.8],[120.8,-2.1],[119.75,-2.3],[119.8,-3.8],[119.9,-3.1],[119.75,-4.6],[122.35,-4.2],[121.1,-1.7]].map(h=>mpt(h[0],h[1]));
+const SEAL=[['Teluk Tomini',122.1,-.15],['Teluk Bone',120.95,-4],['Selat Makassar',117.95,-2.1]].map(s=>[s[0],...mpt(s[1],s[2])]);
+const LBL=[['Gorontalo','KG',123.2,.2,'middle',0],['Manado','MAN',124.72,1.68,'end',9],['Bitung','BIT',125.36,1.4,'start',13],['Makassar','MAK',119.22,-5.14,'end',14]].map(l=>({t:l[0],an:l[1],p:mpt(l[2],l[3]),a:l[4],f:l[5]}));
+const mapSvg=`<g id="geo"><g id="mg"><path d="${LD}" fill="none" stroke="#F3F7EC" stroke-width="24" stroke-linejoin="round" vector-effect="non-scaling-stroke" opacity=".9"/><path d="${LD}" fill="#F0DEAF" stroke="#C9B58C" stroke-width="2.4" stroke-linejoin="round" vector-effect="non-scaling-stroke"/><ellipse cx="${tg2[0]}" cy="${tg2[1]}" rx="15" ry="5" fill="#F0DEAF" stroke="#C9B58C" stroke-width="1.6" vector-effect="non-scaling-stroke"/><ellipse cx="${pl2[0]}" cy="${pl2[1]}" rx="20" ry="9" fill="#F0DEAF" stroke="#C9B58C" stroke-width="1.6" vector-effect="non-scaling-stroke"/></g></g>`;
+const ovSvg=`<g id="ov"><g id="hg">${HILLS.map(()=>'<path class="hh" d="M-9 5L-1 -8L4 -1L7 -5L13 5z" fill="#E4CE9E" stroke="#C9B58C" stroke-width="1.3" stroke-linejoin="round"/>').join('')}${SEAL.map(s=>`<text class="sl" text-anchor="middle">${s[0]}</text>`).join('')}</g><g id="rg">${RS.map((_,k)=>`<path class="rp" fill="none" stroke="${R}" stroke-linecap="round" stroke-linejoin="round" opacity=".9"/>`).join('')}</g><g id="lbg">${LBL.map(l=>`<text class="pl" text-anchor="${l.a}" dy=".35em" opacity="0">${l.t}</text>`).join('')}</g><g id="pg">${STORES.map((s,j)=>`<g class="pn" opacity="0">${j==N-1?'<circle r="11" fill="none" stroke="#F4C430" stroke-width="2.4"/>':''}<circle class="hr" r="8" fill="none" stroke="${R}" stroke-width="2" opacity="0"/><circle r="6" fill="${R}" stroke="#F7EBD3" stroke-width="2.4"/></g>`).join('')}</g><g id="rng" opacity="0"><circle r="17" fill="none" stroke="${R}" stroke-width="2.4" stroke-dasharray="3 5"/><circle r="4" fill="${R}"/><text class="t" id="rl" text-anchor="middle" y="-26" style="stroke:#E3EDDB"></text></g></g>`;
+$('w').innerHTML=`<svg id="sv" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" preserveAspectRatio="xMidYMax meet"><defs><linearGradient id="sa"><stop offset="0" stop-color="#7FBFB5" stop-opacity="0"/><stop offset=".12" stop-color="#7FBFB5" stop-opacity=".6"/><stop offset=".88" stop-color="#7FBFB5" stop-opacity=".6"/><stop offset="1" stop-color="#7FBFB5" stop-opacity="0"/></linearGradient></defs>${mapSvg}${ovSvg}<g id="cam">${cl2}<rect x="4700" y="396" width="2900" height="74" fill="url(#sa)"/>${bh}<rect id="gr" x="-3000" y="470" width="16000" height="9000" fill="#DCCBA8"/><rect x="-3000" y="470" width="16000" height="12" fill="#C9B58C"/><path d="M-3000 535H13000" stroke="#C9B58C" stroke-width="5" stroke-dasharray="46 34"/>${dh}${gate(250,'Gorontalo')}${gate(4800,'Sulawesi Utara')}${gate(7300,'Sulawesi Selatan')}${D.map((d,i)=>store(i,d)).join('')}<g id="mp">${me}</g></g></svg>`;
+$('dt').innerHTML=D.map(()=>'<svg viewBox="0 0 20 20"><path d="M2 8L10 2L18 8V18H2z"/></svg>').join('');
+const ST=[...document.querySelectorAll('.s')],DC=[...document.querySelectorAll('.d')].map(e=>({e,x:+e.dataset.x,s:+e.dataset.s})),DT=[...$('dt').children],RT=[...$('rt').querySelectorAll('span')],ca=$('cam'),mp=$('mp'),sv=$('sv'),l1=$('l1'),l2=$('l2'),ar=$('ar'),gr=$('gr');
+const geo=$('geo'),mg=$('mg'),ov=$('ov'),hg=$('hg'),HE=[...document.querySelectorAll('.hh')],SE=[...document.querySelectorAll('.sl')],RE=[...document.querySelectorAll('.rp')],LE=[...document.querySelectorAll('.pl')],PN=[...document.querySelectorAll('.pn')].map(g=>({g,h:g.querySelector('.hr')})),rng=$('rng'),rl=$('rl'),txt=$('txt');
+const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+/* ==================== KAMERA & LINIMASA ==================== */
+const ZC=16; // zoom "story mode" pada peta
+// tiap segmen story = satu wilayah yang dijelajahi dengan berjalan (x0 = posisi awal pejalan di dunia samping)
+const SEG=[{a:0,n:9,x0:60,pre:['Gorontalo','Tahun 1977.']},{a:9,n:4,x0:4500,pre:['Sulawesi Utara','Kota Manado.']},{a:13,n:1,x0:6560,pre:['Sulawesi Utara','Kota Bitung.']},{a:14,n:2,x0:7150,pre:['Sulawesi Selatan','Kota Makassar.']}];
+const stopEnd=s=>stops[SEG[s].a+SEG[s].n-1];
+// bobot scroll (vh): story = berjalan antar toko, cam = kamera berpindah lewat peta
+const PH=[{k:'open',w:50},{k:'cam',id:'zg',w:90},{k:'story',s:0,w:432},{k:'cam',id:'gn',w:130},{k:'story',s:1,w:192},{k:'cam',id:'nb',w:80},{k:'story',s:2,w:62},{k:'cam',id:'bm',w:150},{k:'story',s:3,w:100},{k:'cam',id:'fin',w:150},{k:'hold',w:60}];
+const SUM=PH.reduce((a,x)=>a+x.w,0);{let c=0;PH.forEach(x=>{x.b=c/SUM;c+=x.w;x.e=c/SUM})}
+$('sp').style.height=(SUM+100)+'vh';
+const tgt=(an,lab,a0,a1)=>({an,lab,a0,a1});
+const CP={ // so = opacity dunia story, rv = jumlah toko yang sudah berdiri, ct = teks, tg = penanda tujuan
+zg:{pv:null,nx:0,rv:0,so:t=>wn(t,.6,.95),ct:t=>t<.3?'open':'pre0',tg:tgt('KG','1977',.25,.55)},
+gn:{pv:0,nx:1,rv:9,so:t=>t<.5?1-wn(t,0,.2):wn(t,.78,1),ct:t=>t<.45?'gn1':'gn2',tg:tgt('MAN','Mei 2022',.55,.78)},
+nb:{pv:1,nx:2,rv:13,so:t=>t<.5?1-wn(t,0,.22):wn(t,.72,.95),ct:t=>t<.5?'nb1':'nb2',tg:tgt('BIT','Maret 2024',.3,.5)},
+bm:{pv:2,nx:3,rv:14,so:t=>t<.5?1-wn(t,0,.2):wn(t,.8,1),ct:t=>t<.3?'bm1':'bm2',tg:tgt('MAK','Mei 2025',.55,.75)},
+fin:{pv:3,nx:null,rv:16,so:t=>1-wn(t,0,.25),ct:()=>'s15',tg:null}};
+const RI=[[3,.04,.2],[3,.3,.72],[5,.25,.7],[7,.12,.6]]; // [indeks fase, mulai, selesai] penggambaran jejak
+const TX={gn1:['Gorontalo','9 toko di Gorontalo.'],gn2:['Sulawesi Utara','Menuju Sulawesi Utara.'],nb1:['Manado','4 toko di Manado.'],nb2:['Sulawesi Utara','Lalu ke Bitung.'],bm1:['Sulawesi Utara','Dari Bitung.'],bm2:['Sulawesi Selatan','Menuju Makassar.']};
+const LZ=(a,b,t)=>a*Math.pow(b/a,t);
+function camLerp(A,B,u){const e=lr(u,S(u),.6),z=LZ(A.z,B.z,e),d=1/B.z-1/A.z,w=Math.abs(d)<1e-6?e:(1/z-1/A.z)/d;return{cx:lr(A.c[0],B.c[0],w),cy:lr(A.c[1],B.c[1],w),z}}
+function camAt(Kk,t){if(RM){let m=Kk[0];Kk.forEach(k=>{if(k.z<m.z)m=k});return{cx:m.c[0],cy:m.c[1],z:m.z}}let i=0;while(i<Kk.length-2&&t>Kk[i+1].t)i++;const A=Kk[i],B=Kk[i+1];return camLerp(A,B,cl((t-A.t)/(B.t-A.t)))}
+let vx=0,vw=1000,ps=1,C0=[360,322],K={},yS=300;
+function mk(){const zf=vw/1000;
+K.open=[{t:0,c:C0,z:1},{t:1,c:C0,z:1.06}];
+K.zg=[{t:0,c:C0,z:1.06},{t:1,c:AP('KG'),z:ZC}];
+K.gn=[{t:0,c:AP('TIL'),z:ZC},{t:.2,c:mpt(122.55,.55),z:5*zf},{t:.62,c:mpt(123.9,.95),z:3.2*zf},{t:1,c:AP('MAN'),z:ZC}];
+K.nb=[{t:0,c:AP('MAN'),z:ZC},{t:.5,c:mpt(125,1.45),z:7*zf},{t:1,c:AP('BIT'),z:ZC}];
+K.bm=[{t:0,c:AP('BIT'),z:ZC},{t:.3,c:C0,z:1},{t:.64,c:mpt(121,-2.5),z:1.3},{t:1,c:AP('MAK'),z:ZC}];
+K.fin=[{t:0,c:AP('MAK'),z:ZC},{t:.6,c:C0,z:1},{t:1,c:C0,z:1}]}
+function sizeText(){LE.forEach(e=>{e.style.fontSize=15*ps+'px';e.style.strokeWidth=4*ps});SE.forEach(e=>e.style.fontSize=13*ps+'px');rl.style.fontSize=20*ps+'px';rl.style.strokeWidth=5*ps;RE.forEach(e=>{e.setAttribute('stroke-width',3*ps);e.setAttribute('stroke-dasharray',`0.1 ${8*ps}`)})}
+function vb(){const m=innerWidth/innerHeight<.8;vx=m?100:0;vw=m?700:1000;sv.setAttribute('viewBox',`${vx} 0 ${vw} 600`);ps=cl(.9/Math.min(innerWidth/vw,innerHeight/600),1,2.1);C0=m?[520,345]:[360,322];SE[2].style.display=m?'none':'';mk();sizeText()}
+/* ==================== TEKS ==================== */
+let lc='';
+const capHtml=d=>`<em>${d.year}</em><b>${d.name}</b><span>${d.city}${d.mapUrl?` · <a class="loc" href="${d.mapUrl}" target="_blank" rel="noopener noreferrer" aria-label="Lihat lokasi ${d.name} di Google Maps (tab baru)">Lihat lokasi ↗</a>`:''}</span>`;
+function setCtx(c){if(c===lc)return;lc=c;let k,h,cap='',m;
+if(c=='open'){k='Sejarah Gembira';h='Menyaksikan Gembira tumbuh.'}
+else if(m=/^pre(\d)$/.exec(c)){[k,h]=SEG[+m[1]].pre}
+else if(m=/^s(\d+)$/.exec(c)){const j=+m[1];k=CH[CI[j]][0];h=CH[CI[j]][1];cap=capHtml(STORES[j])}
+else[k,h]=TX[c];
+$('k').textContent=k;$('h').textContent=h;$('cap').innerHTML=cap;$('cap').style.opacity=1;
+if(!RM){txt.classList.remove('sw');void txt.offsetWidth;txt.classList.add('sw')}}
+/* ==================== FRAME ==================== */
+const mix=(A,B,C,a,b)=>[0,1,2].map(k=>lr(lr(A[k],B[k],a),C[k],b)),SEA=[222,234,218];
+let lx=60;
+function f(){
+const H=document.documentElement.scrollHeight-innerHeight,p=H>0?cl(scrollY/H):0;
+let ph=0;while(ph<PH.length-1&&p>=PH[ph].e)ph++;
+const P=PH[ph],t=cl((p-P.b)/(P.e-P.b));
+let so=0,sx=SEG[0].x0,cam=null,rv=0,ctx='open',tg=null,ta=0,txo=1,fo=0,wv=-1,qi=0,qt=0,sg=null;
+if(P.k=='open')cam=camAt(K.open,t);
+else if(P.k=='hold'){cam=camAt(K.fin,1);rv=N;ctx='s15';txo=0;fo=1;wv=2;sx=stops[N-1]}
+else if(P.k=='cam'){const c=CP[P.id];cam=camAt(K[P.id],t);so=c.so(t);rv=c.rv;ctx=c.ct(t);
+ sx=c.pv==null?SEG[0].x0:(t<.5||c.nx==null)?stopEnd(c.pv):SEG[c.nx].x0;
+ if(c.tg){tg=c.tg;ta=wn(t,c.tg.a0,c.tg.a1)}
+ if(P.id=='fin'){txo=1-wn(t,.25,.45);fo=wn(t,.62,.9);wv=t}}
+else{sg=SEG[P.s];const q=cl((t-.04)/.92,0,.9999)*sg.n;qi=q|0;qt=q-qi;const pv=qi?stops[sg.a+qi-1]:sg.x0;sx=lr(pv,stops[sg.a+qi],S(cl(qt/.55)));so=1;
+ const cur=qt>.45?sg.a+qi:sg.a+qi-1;ctx=cur<sg.a?'pre'+P.s:'s'+cur;rv=sg.a+qi+(qt>.45?1:0)}
+setCtx(ctx);
+// toko yang sudah berdiri
+let cnt=0;const sc=D.map((d,j)=>{const u=sg?(j<sg.a+qi?1:j==sg.a+qi?wn(qt,.25,.55):0):(j<rv?1:0);if(u>.5)cnt++;return u});
+sc.forEach((u,j)=>DT[j].classList.toggle('on',u>.5));
+[ph>=1,cnt>=10,cnt>=14,cnt>=15].forEach((v,j)=>RT[j].classList.toggle('on',v));
+// ---- dunia story (kamera dekat)
+if(so>.01){ca.style.display='';ca.style.opacity=so;
+ const ss=RM?1:lr(.72,1,so);ca.setAttribute('transform',`translate(${vx+vw/2} 505) scale(${ss}) translate(${-(sx+120)} -470)`);
+ const sp=Math.abs(sx-lx),a=RM?0:Math.sin(sx*.12)*24*cl(sp/2,0,1);
+ l1.setAttribute('transform',`rotate(${a} -6 -76)`);l2.setAttribute('transform',`rotate(${-a} 8 -76)`);ar.setAttribute('transform',`rotate(${-a*.8} -1 -122)`);mp.setAttribute('transform',`translate(${sx} 470)`);
+ ST.forEach((e,j)=>e.setAttribute('transform',`translate(${D[j][3]} 470) scale(${sc[j]})`));
+ DC.forEach(o=>{const u=wn(sx,o.x-900,o.x-500);o.e.setAttribute('transform',`translate(${o.x} 470) scale(${u*o.s})`)})}
+else ca.style.display='none';
+lx=sx;
+// ---- peta (kamera jauh)
+const mo=1-wn(so,.35,1);
+geo.style.display=ov.style.display=mo>.01?'':'none';geo.style.opacity=ov.style.opacity=mo;
+if(mo>.01&&cam){const{cx,cy,z}=cam,X0=vx+vw/2;yS=lr(300,465,so);
+ mg.setAttribute('transform',`translate(${X0} ${yS}) scale(${z}) translate(${-cx} ${-cy})`);
+ const PJ=(a,b)=>[X0+(a-cx)*z,yS+(b-cy)*z],ha=1-wn(z,1.5,2.8);hg.style.opacity=ha;
+ if(ha>.01){HE.forEach((e,i)=>{const q=PJ(HILLS[i][0],HILLS[i][1]);e.setAttribute('transform',`translate(${q[0]} ${q[1]}) scale(${ps})`)});SE.forEach((e,i)=>{const q=PJ(SEAL[i][1],SEAL[i][2]);e.setAttribute('transform',`translate(${q[0]} ${q[1]})`)})}
+ const RP=RI.map(([pi,a,b])=>ph>pi?1:ph==pi?wn(t,a,b):0);
+ RS.forEach((pts,k)=>{const n=Math.floor(RP[k]*(pts.length-1));let d='';if(n>=1)for(let m=0;m<=n;m++){const q=PJ(pts[m][0],pts[m][1]);d+=(m?'L':'M')+q[0].toFixed(1)+' '+q[1].toFixed(1)}RE[k].setAttribute('d',d)});
+ LBL.forEach((l,i)=>{const a=rv>l.f?1:tg&&tg.an==l.an?ta:0;LE[i].setAttribute('opacity',a);if(a>.01){const q=PJ(l.p[0],l.p[1]);LE[i].setAttribute('transform',`translate(${q[0]} ${q[1]})`)}});
+ const pr=(4.8+2.4*wn(z,1,6))*ps;
+ STORES.forEach((s,j)=>{const on=j<rv,g=PN[j].g;g.setAttribute('opacity',on?1:0);if(!on)return;const q=PJ(PP[j][0],PP[j][1]);g.setAttribute('transform',`translate(${q[0]} ${q[1]}) scale(${pr/6})`);
+  const u=wv<0?0:cl((wv-(.5+j*.022))/.12),h=PN[j].h;if(u>0&&u<1){h.setAttribute('r',8+22*u);h.setAttribute('opacity',.6*(1-u))}else h.setAttribute('opacity',0)});
+ if(tg&&ta>.01){const q=PJ(AP(tg.an)[0],AP(tg.an)[1]);rng.setAttribute('opacity',ta);rng.setAttribute('transform',`translate(${q[0]} ${q[1]}) scale(${ps})`);rl.textContent=tg.lab}else rng.setAttribute('opacity',0)}
+// ---- latar & UI
+const n=wn(sx,4750,5250),m=wn(sx,7300,7650),bs=mix([251,235,207],[228,239,224],[247,217,176],n,m),w=wn(so,.1,.95);
+$('w').style.background='rgb('+[0,1,2].map(k=>Math.round(lr(SEA[k],bs[k],w))).join()+')';
+gr.setAttribute('fill','rgb('+mix([220,203,168],[206,205,166],[221,189,146],n,m).map(Math.round).join()+')');
+txt.style.opacity=txo;txt.style.visibility=txo<.02?'hidden':'visible';
+$('fin').style.opacity=fo;$('fin').style.pointerEvents=fo>.5?'auto':'none';$('hint').style.opacity=1-wn(p,0,.012)}
+let tk=0;const go=()=>{if(!tk)tk=requestAnimationFrame(()=>{tk=0;f()})};
+addEventListener('scroll',go,{passive:true});addEventListener('resize',()=>{vb();go()});vb();f();
+</script><script>
+(()=>{const E=document.documentElement,ss=sessionStorage,$=s=>document.querySelector(s),RM=matchMedia('(prefers-reduced-motion:reduce)').matches,
+P=$('.go')?'w':$('#lg')?'h':'s',EZ='cubic-bezier(.65,0,.25,1)',SH='0 7px 0 rgba(120,50,20,.14)',NS='0 0 0 rgba(120,50,20,0)';
+let G={};try{G=JSON.parse(ss.getItem('gx'))||{};ss.removeItem('gx')}catch(e){}
+const fly=(r,src)=>{const d=new Image();d.src=src;d.alt='';Object.assign(d.style,{position:'fixed',zIndex:9999,left:r.left+'px',top:r.top+'px',width:r.width+'px',height:r.height+'px',borderRadius:'18px',boxShadow:SH,pointerEvents:'none',transformOrigin:'0 0'});document.body.append(d);return d},
+clear=()=>E.classList.remove('gx-in'),raf2=f=>requestAnimationFrame(()=>requestAnimationFrame(f)),tr=(el,css,tm)=>{el.style.transition=tm;Object.assign(el.style,css)};
+if(G.f){
+ if(P=='h'&&G.f=='w'&&G.r&&!RM){
+  const lg=$('#lg'),t=lg.getBoundingClientRect(),w=$('#w'),d=fly(G.r,lg.getAttribute('href')),sx=t.width/G.r.width,sy=t.height/G.r.height;
+  lg.style.visibility='hidden';w.style.transformOrigin='50% 100%';w.style.transform='scale(1.16)';
+  raf2(()=>{clear();w.style.transition='transform 1.5s cubic-bezier(.2,.7,.2,1)';w.style.transform='';
+   d.animate([{transform:'none',borderRadius:'18px',boxShadow:SH},{transform:`translate(${t.left-G.r.left}px,${t.top-G.r.top}px) scale(${sx},${sy})`,borderRadius:(12/sx)+'px',boxShadow:NS}],{duration:1100,delay:380,easing:EZ,fill:'forwards'}).finished.then(()=>{lg.style.visibility='';d.remove()})});
+ }else if(P=='s'&&G.f=='h'&&!RM){
+  const w=$('#w');w.style.transform='translateX(22vw)';
+  raf2(()=>{clear();w.style.transition='transform 1.6s cubic-bezier(.2,.7,.2,1)';w.style.transform=''});
+ }else raf2(clear);
+}
+const link=P=='w'?$('.go'):$('#fin a');
+if(link)link.addEventListener('click',e=>{
+ if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey||e.button)return;e.preventDefault();
+ const o={f:P};
+ if(!RM){
+  if(P=='w'){const im=$('.hero img'),r=im.getBoundingClientRect();o.r={left:r.left,top:r.top,width:r.width,height:r.height};fly(r,im.src);im.style.visibility='hidden';
+   document.querySelectorAll('.hero>*:not(img)').forEach(el=>tr(el,{opacity:0,transform:'translateY(-18px)'},'opacity .45s,transform .6s'));
+   tr($('#sc'),{transform:'scale(1.5)',transformOrigin:'50% 90%'},'transform .95s cubic-bezier(.5,0,.75,.35)')}
+  else if(P=='h'){tr($('#fin'),{opacity:0,transform:'translateX(-5vw)'},'opacity .45s,transform .7s');tr($('#w'),{transform:'translateX(-26vw)'},'transform .95s cubic-bezier(.5,0,.75,.35)')}
+  else{tr($('#fin'),{opacity:0},'opacity .45s');tr($('#w'),{transform:'scale(.95)'},'transform .95s ease-in')}
+ }
+ try{ss.setItem('gx',JSON.stringify(o))}catch(x){}
+ E.classList.add('gx-out');setTimeout(()=>{location.href=link.href},RM?220:950)});
+addEventListener('pageshow',e=>{if(e.persisted)location.reload()});
+})();
+</script>
+</body></html>
